@@ -1,13 +1,16 @@
 # SETUP:
     
-    '''bah
+    ```bash
     node -v
     nvm -v
+    ```
 
+
+    ```bash
     npm install redis
     npm install prompt-sync
-    '''
-    
+    ```
+
 ## USAGE:  
 
 
@@ -25,21 +28,21 @@
 
         2. Run the following command:
 
-            '''bash
+            ```bash
             node index
-            '''
+            ```
 
 
     ### publisher.js + subscriber.js
 
         Run this in the first terminal:
             
-            '''bash
+            ```bash
             node publisher
-            '''
+            ```
 
         Run this in and another terminal:
             
-            '''bash
+            ```bash
             node subscriber
-            '''
+            ```
