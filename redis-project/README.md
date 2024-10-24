@@ -1,16 +1,18 @@
-SETUP:
-
+# SETUP:
+    
+    '''bah
     node -v
     nvm -v
 
     npm install redis
     npm install prompt-sync
+    '''
     
-USAGE:  
+## USAGE:  
 
 
 
-    ** index.js **
+    ### index.js 
 
         1. uncommit the function what you want to use in the index.js file.
 
@@ -21,16 +23,23 @@ USAGE:
             // await hashmap();             // HMSET, HGET, HEXIST, HINCRBY
             // await tranzakciok();         // MULTI, EXEC
 
-        2. node index
+        2. Run the following command:
+
+            '''bash
+            node index
+            '''
 
 
-
-    ** publisher.js + subscriber.js **
+    ### publisher.js + subscriber.js
 
         Run this in the first terminal:
             
+            '''bash
             node publisher
+            '''
 
         Run this in and another terminal:
             
+            '''bash
             node subscriber
+            '''
