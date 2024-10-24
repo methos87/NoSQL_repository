@@ -1,48 +1,48 @@
 # SETUP:
     
-    ```bash
-    node -v
-    nvm -v
-    ```
+```bash
+node -v
+nvm -v
+```
 
 
-    ```bash
-    npm install redis
-    npm install prompt-sync
-    ```
+```bash
+npm install redis
+npm install prompt-sync
+```
 
 ## USAGE:  
 
 
 
-    ### index.js 
+### index.js 
 
-        1. uncommit the function what you want to use in the index.js file.
+1. uncommit the function what you want to use in the index.js file.
 
-            // await alapok();              // SET, GET, EXPIRE, TTL, DEL, EXIST, INCR, TIME
-            // await listak();              // LPUSH, RPUSH, LPOP, RPOP, LRANGE, LLEN
-            // await halmazok();            // SADD, SREM, SISMEMBER, SINTER, SCARD, SMEMBERS
-            // await rendezett_halmazok();  // ZADD, ZRANGE, ZSCORE
-            // await hashmap();             // HMSET, HGET, HEXIST, HINCRBY
-            // await tranzakciok();         // MULTI, EXEC
+// await alapok();              // SET, GET, EXPIRE, TTL, DEL, EXIST, INCR, TIME
+// await listak();              // LPUSH, RPUSH, LPOP, RPOP, LRANGE, LLEN
+// await halmazok();            // SADD, SREM, SISMEMBER, SINTER, SCARD, SMEMBERS
+// await rendezett_halmazok();  // ZADD, ZRANGE, ZSCORE
+// await hashmap();             // HMSET, HGET, HEXIST, HINCRBY
+// await tranzakciok();         // MULTI, EXEC
 
-        2. Run the following command:
+2. Run the following command:
 
-            ```bash
-            node index
-            ```
+```bash
+node index
+```
 
 
-    ### publisher.js + subscriber.js
+### publisher.js + subscriber.js
 
-        Run this in the first terminal:
-            
-            ```bash
-            node publisher
-            ```
+Run this in the first terminal:
 
-        Run this in and another terminal:
-            
-            ```bash
-            node subscriber
-            ```
+```bash
+node publisher
+```
+
+Run this in and another terminal:
+    
+```bash
+node subscriber
+```
