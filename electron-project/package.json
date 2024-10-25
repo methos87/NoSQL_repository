@@ -11,6 +11,10 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "electron": "^22.2.0"
+    "electron": "^22.3.27"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21",
+    "redis": "^4.7.0"
   }
 }

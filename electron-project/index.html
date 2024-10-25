@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'"> -->
+    <link href="./styles.css" rel="stylesheet">
+    <title>Hello Novák Ákos!</title>
+
+    <style>
+      table {
+          width: 100%;
+          border-collapse: collapse;
+      }
+      td {
+          border: 1px solid #ccc;
+          padding: 8px;
+      }
+      td:first-child {
+          background-color: #f0f0f0;
+      }
+      strong {
+          font-weight: bold;
+      }
+    </style>
+
+  </head>
+  <body>
+    <h1>Hello Novák Ákos!</h1>
+    <img src="https://cubixedu.com/app/uploads/2023/02/CUBIX.svg" width="600" height="325" />
+    <br/>
+    We are using Node.js <span id="node-version"></span>,
+    Chromium <span id="chrome-version"></span>,
+    and Electron <span id="electron-version"></span>.
+
+    <p>
+      Login in:<br><br>
+      <input id="input_name" type="text" placeholder="Please enter your name">
+      <button id="button_name" onclick="ask_username()">Submit</button>
+      <br>
+      <div id="name_field"></div>
+    </p>
+
+    <p>
+      <button id="button_time" onclick="get_time()">Get Time</button>
+      <br>
+      <div id="name_field2"></div>
+    </p>
+
+    <p>
+      <button id="button_info" onclick="get_info()">Redis Info</button>
+      <br>
+      <div id="name_field3">Loading...</div>
+    </p>
+
+
+
+    <!-- You can also require other files to run in this process -->
+    <script src="./renderer.js"></script>
+  </body>
+</html>
